@@ -1,0 +1,58 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+    <title>5 Times Table</title>
+    <script>
+        /* 
+        Input: Integer n
+        Process: sunshine*n
+        Output: sunshine
+        
+        */
+        // function integerRead() {
+        // let salary = prompt("pleas enter your gross salary"); // The table output HTML
+        // salary = parseFloat(salary);
+        // if (salary <= 20000) {
+        //     alert(0);
+        // } else if (salary <= 50000) {
+        //     let tax_amount = (5 / 100) * salary;
+        //     alert(tax_amount);
+        // } else {
+        //     alert((10 / 100) * salary);
+        // }
+        // let radius = prompt('Please enter your radius');
+        // radius = parseFloat(radius);
+        // while (radius <= 0) {
+        //     prompt("please enter a valid radius");
+        //     radius = parseFloat(radius);
+        // }
+        // let area=Math.PI*Math.pow(radius, 2);
+        // alert(area);
+        /*let radius;
+        do {
+            let radius = prompt('Please enter your radius');
+            radius = parseFloat(radius);
+        }
+        while (radius <= 0)
+        let area = Math.PI * Math.pow(radius, 2);
+        alert(area);*/
+        // for(let x=10; x>=0; x--){
+        // console.log(x);
+        // }
+        function integerRead() {
+            let numberofStudents = parseInt(document.getElementById("getItDown").value); // The table output HTML
+            let numberofTeam = parseInt(document.getElementById("getItUp").value); // The table output HTML
+            let members = numberofStudents / numberofTeam;
+            document.getElementById("outputDiv").innerHTML = members;
+        }
+    </script>
+</head>
+<body>
+    <h1>members</h1>
+    total students: <input type="text" id="getItDown"><br>
+    team: <input type="text" id="getItUp"><br>
+    <button type="button" onclick="integerRead()">Click Here to see the result</button>
+    <div id="outputDiv"></div>
+</body>
+</html>
